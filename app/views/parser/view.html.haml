@@ -1,0 +1,11 @@
+%h1
+  Parser#view
+%p
+  Find me in app/views/parser/view.html.haml
+
+- @episodes.each_with_index do |episode|
+  %p
+    = episode[:epnum]
+    = episode[:title]
+  %p
+    = episode[:description]
