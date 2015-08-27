@@ -8,7 +8,7 @@ class ParserController < ApplicationController
 
   def get_season_data(season)
     template = /#/
-    url = 'http://en.wikipedia.org/wiki/The_Big_Bang_Theory_(season_#)'
+    url = 'https://en.wikipedia.org/wiki/The_Big_Bang_Theory_(season_#)'
     url.gsub!(template, season)
 
     doc = Nokogiri::HTML(open(url))
