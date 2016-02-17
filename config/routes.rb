@@ -1,4 +1,5 @@
 Bigbangerizer::Application.routes.draw do
+  root 'parser#random'
   get "parser/view/:season", :to => "parser#view"
   get "parser/random"
   # The priority is based upon order of creation: first created -> highest priority.
