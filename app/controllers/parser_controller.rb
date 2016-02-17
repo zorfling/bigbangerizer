@@ -36,7 +36,7 @@ class ParserController < ApplicationController
   end
 
   def random
-    num_seasons = 7
+    num_seasons = 9
     season = 1 + rand(num_seasons)
     episodes = get_season_data season.to_s
     @episode = episodes[rand(episodes.length) + 1]
